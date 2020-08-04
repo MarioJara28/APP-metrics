@@ -1,0 +1,20 @@
+Call:
+lm(formula = y$`sum(succ_orders)` ~ y$`avg(is_ramadan)` + y$`avg(is_important_day)` + 
+    y$`avg(is_holiday)`)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+ -5186  -1964   -183   1514   8266 
+
+Coefficients:
+                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                9044.51      85.86 105.342  < 2e-16 ***
+y$`avg(is_ramadan)`       -2783.77     863.79  -3.223  0.00131 ** 
+y$`avg(is_important_day)`   282.22     836.01   0.338  0.73576    
+y$`avg(is_holiday)`        1998.09     398.78   5.011 6.44e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2490 on 974 degrees of freedom
+Multiple R-squared:  0.1028,	Adjusted R-squared:    0.1 
+F-statistic:  37.2 on 3 and 974 DF,  p-value: < 2.2e-16
